@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+ul {
+    margin: 5px 15px 30px;
+    list-style: square;
+}
+
+button {
+    padding: 10px;
+    margin: 10px;
+}

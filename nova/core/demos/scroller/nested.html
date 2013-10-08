@@ -1,0 +1,106 @@
+﻿
+<style type="text/css">
+    #scroller1-wrap,#scroller2-wrap {
+        background-color: #ffffff;
+        padding: 10px;
+        border-radius: 5px;
+        margin: 10px 0;
+    }
+    #demoContent>div {
+        padding: 10px;
+    }
+    dl {
+        padding: 0px;
+        margin: 0px;
+    }
+    dl dt {
+        font-weight: bold;
+    }
+</style>
+
+<div id="header" class="bar">
+    <div id="back" class="btn-left">
+        <span>Back</span>
+    </div>
+    Scroller in scroller
+</div>
+<div id="demoContent" style="top: 50px; position: absolute; width: 100%;">
+    <div id="scrollContent">
+        <div class="group">
+            the whole page scrolling, try it now!<br/>
+            the whole page scrolling, try it now!<br/>
+            the whole page scrolling, try it now!<br/>
+        </div>
+        <div id="scroller1-wrap" class="group" style="height: 100px; overflow: hidden; width: inherit;">
+            <div id="scroller1">
+                <dl>
+                    <dt>this is scroller 1</dt>
+                    <dd>scrolling text here, this is line 1</dd>
+                    <dd>scrolling text here, this is line 2</dd>
+                    <dd>scrolling text here, this is line 3</dd>
+                    <dd>scrolling text here, this is line 4</dd>
+                    <dd>scrolling text here, this is line 5</dd>
+                    <dd>scrolling text here, this is line 6</dd>
+                    <dd>scrolling text here, this is line 7</dd>
+                    <dd>scrolling text here, this is line 8</dd>
+                    <dd>scrolling text here, this is line 9</dd>
+                </dl>    
+            </div>
+        </div>
+        <div class="group">
+            here is some text, not scrolling,here is some text, not scrolling<br/>
+            here is some text, not scrolling,here is some text, not scrolling<br/>
+            here is some text, not scrolling,here is some text, not scrolling<br/>
+            here is some text, not scrolling,here is some text, not scrolling<br/>
+            here is some text, not scrolling,here is some text, not scrolling<br/>
+            here is some text, not scrolling,here is some text, not scrolling<br/>
+        </div>
+        <div id="scroller2-wrap" class="group" style="height: 100px; overflow: hidden;">
+            <div id="scroller2">
+                <dl>
+                    <dt>this is scroller 2</dt>
+                    <dd>scrolling text here, this is line 1</dd>
+                    <dd>scrolling text here, this is line 2</dd>
+                    <dd>scrolling text here, this is line 3</dd>
+                    <dd>scrolling text here, this is line 4</dd>
+                    <dd>scrolling text here, this is line 5</dd>
+                    <dd>scrolling text here, this is line 6</dd>
+                    <dd>scrolling text here, this is line 7</dd>
+                    <dd>scrolling text here, this is line 8</dd>
+                    <dd>scrolling text here, this is line 9</dd>
+                </dl>    
+            </div>
+        </div>
+        <div class="group">
+            here is some text, not scrolling,here is some text, not scrolling<br/>
+            here is some text, not scrolling,here is some text, not scrolling<br/>
+            here is some text, not scrolling,here is some text, not scrolling<br/>
+            here is some text, not scrolling,here is some text, not scrolling<br/>
+            here is some text, not scrolling,here is some text, not scrolling<br/>
+            here is some text, not scrolling,here is some text, not scrolling<br/>
+        </div>
+        <div class="group">
+            here is some text, not scrolling,here is some text, not scrolling<br/>
+            here is some text, not scrolling,here is some text, not scrolling<br/>
+            here is some text, not scrolling,here is some text, not scrolling<br/>
+            here is some text, not scrolling,here is some text, not scrolling<br/>
+            here is some text, not scrolling,here is some text, not scrolling<br/>
+            here is some text, not scrolling,here is some text, not scrolling<br/>
+        </div>    
+    </div>
+    
+</div>
+<script language="javascript" type="text/javascript">
+    $(document).ready(function () {
+        $("#demoContent").height(($(window).height() - 50) + "px");
+        nova.touch.bindClick("#back", function () {
+            nova.application.goBack();
+        });
+
+        var scroller = new nova.Scroller("#scrollContent");
+        scroller.init();
+        var scroller1 = new nova.Scroller("#scroller1,#scroller2");
+        scroller1.isInVerticalScroll = true;
+        scroller1.init();
+    });
+</script>

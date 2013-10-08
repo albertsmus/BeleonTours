@@ -1,0 +1,143 @@
+@charset "UTF-8";
+.portrait h1 {
+}
+.landscape h1 {
+}
+body {
+	background-color: #666;
+}
+.logo {
+	padding: 10px;
+	text-align: center;
+}
+#map div[data-role="content"] {
+	position: absolute;
+	top: 42px;
+	bottom: 42px;
+	left: 0;
+	right: 0;
+}
+
+#gMap {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.thumbnail {
+	float: right;
+	display: block;
+	margin: 5px 0 15px 5px;
+	border: 2px #fff solid;
+	padding: 2px;
+}
+.clearboth {
+	clear: both;
+}
+.addr {
+	overflow: hidden;
+	position:relative;
+}
+h2 {
+	margin-top: 0;
+}
+.details {
+	display: block;
+	margin: 10px 0;
+}
+div[data-role="controlgroup"] {
+	clear:both;
+	text-align: center;
+}
+div[data-role="content"] {
+	padding-bottom: 40px;
+}
+#loading {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color:rgba(0,0,0,.9);
+	z-index:9999;
+}
+.errorMsg {
+	position: absolute;
+	top: 0;
+	left: 10px;
+	z-index:9999;
+	padding: 5px;
+	background-color: rgba(0,0,0,.7);
+	display: none;
+}
+.ui-btn-up-c {
+	border: 1px solid #cccccc /*{c-bup-border}*/;
+	background: #eeeeee /*{c-bup-background-color}*/;
+	font-weight: bold;
+	color: #2f3e46 /*{c-bup-color}*/;
+	text-shadow: 0 /*{c-bup-shadow-x}*/ 1px /*{c-bup-shadow-y}*/ 0 /*{c-bup-shadow-radius}*/ #ffffff /*{c-bup-shadow-color}*/;
+	background-image: -webkit-gradient(linear, left top, left bottom, from( #ffffff /*{c-bup-background-start}*/), to( #f1f1f1 /*{c-bup-background-end}*/)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient( #ffffff /*{c-bup-background-start}*/, #f1f1f1 /*{c-bup-background-end}*/); /* Chrome 10+, Saf5.1+ */
+	background-image:    -moz-linear-gradient( #ffffff /*{c-bup-background-start}*/, #f1f1f1 /*{c-bup-background-end}*/); /* FF3.6 */
+	background-image:     -ms-linear-gradient( #ffffff /*{c-bup-background-start}*/, #f1f1f1 /*{c-bup-background-end}*/); /* IE10 */
+	background-image:      -o-linear-gradient( #ffffff /*{c-bup-background-start}*/, #f1f1f1 /*{c-bup-background-end}*/); /* Opera 11.10+ */
+	background-image:         linear-gradient( #ffffff /*{c-bup-background-start}*/, #f1f1f1 /*{c-bup-background-end}*/);
+}
+.ui-btn-up-c:visited,
+.ui-btn-up-c a.ui-link-inherit {
+	color: #2f3e46 /*{c-bup-color}*/;
+}
+.ui-btn-hover-c {
+	border: 1px solid #bbbbbb /*{c-bhover-border}*/;
+	background: #d5b82a /*{c-bhover-background-color}*/;
+	font-weight: bold;
+	color: #2f3e46 /*{c-bhover-color}*/;
+	text-shadow: 0 /*{c-bhover-shadow-x}*/ 1px /*{c-bhover-shadow-y}*/ 0 /*{c-bhover-shadow-radius}*/ #ffffff /*{c-bhover-shadow-color}*/;
+	background-image: -webkit-gradient(linear, left top, left bottom, from( #f9d731 /*{c-bhover-background-start}*/), to( #b09822 /*{c-bhover-background-end}*/)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient( #f9d731 /*{c-bhover-background-start}*/, #b09822 /*{c-bhover-background-end}*/); /* Chrome 10+, Saf5.1+ */
+	background-image:    -moz-linear-gradient( #f9d731 /*{c-bhover-background-start}*/, #b09822 /*{c-bhover-background-end}*/); /* FF3.6 */
+	background-image:     -ms-linear-gradient( #f9d731 /*{c-bhover-background-start}*/, #b09822 /*{c-bhover-background-end}*/); /* IE10 */
+	background-image:      -o-linear-gradient( #f9d731 /*{c-bhover-background-start}*/, #b09822 /*{c-bhover-background-end}*/); /* Opera 11.10+ */
+	background-image:         linear-gradient( #f9d731 /*{c-bhover-background-start}*/, #b09822 /*{c-bhover-background-end}*/);
+}
+.ui-btn-hover-c:visited,
+.ui-btn-hover-c:hover,
+.ui-btn-hover-c a.ui-link-inherit {
+	color: #2f3e46 /*{c-bhover-color}*/;
+}
+.ui-btn-down-c {
+	border: 1px solid #bbbbbb /*{c-bdown-border}*/;
+	background: #d6d6d6 /*{c-bdown-background-color}*/;
+	font-weight: bold;
+	color: #2f3e46 /*{c-bdown-color}*/;
+	text-shadow: 0 /*{c-bdown-shadow-x}*/ 1px /*{c-bdown-shadow-y}*/ 0 /*{c-bdown-shadow-radius}*/ #ffffff /*{c-bdown-shadow-color}*/;
+	background-image: -webkit-gradient(linear, left top, left bottom, from( #d0d0d0 /*{c-bdown-background-start}*/), to( #dfdfdf /*{c-bdown-background-end}*/)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient( #d0d0d0 /*{c-bdown-background-start}*/, #dfdfdf /*{c-bdown-background-end}*/); /* Chrome 10+, Saf5.1+ */
+	background-image:    -moz-linear-gradient( #d0d0d0 /*{c-bdown-background-start}*/, #dfdfdf /*{c-bdown-background-end}*/); /* FF3.6 */
+	background-image:     -ms-linear-gradient( #d0d0d0 /*{c-bdown-background-start}*/, #dfdfdf /*{c-bdown-background-end}*/); /* IE10 */
+	background-image:      -o-linear-gradient( #d0d0d0 /*{c-bdown-background-start}*/, #dfdfdf /*{c-bdown-background-end}*/); /* Opera 11.10+ */
+	background-image:         linear-gradient( #d0d0d0 /*{c-bdown-background-start}*/, #dfdfdf /*{c-bdown-background-end}*/);
+}
+.ui-btn-down-c:visited,
+.ui-btn-down-c:hover,
+.ui-btn-down-c a.ui-link-inherit {
+	color: #2f3e46 /*{c-bdown-color}*/;
+}
+.ui-btn-up-c,
+.ui-btn-hover-c,
+.ui-btn-down-c {
+	  font-family: Helvetica, Arial, sans-serif /*{global-font-family}*/;
+	text-decoration: none;
+}
+#demoRunning {
+	text-align: center;
+	display: none;
+}
+/* Uncomment this before compiling in order to cause the initial page to fade in
+@media only screen and (max-width: 800px) {
+	#page1 {
+		display: none;
+	}
+}
+*/
